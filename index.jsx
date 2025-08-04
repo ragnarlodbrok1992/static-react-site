@@ -2,7 +2,11 @@ const React = require('react');
 const ReactDom = require('react-dom/client');
 
 function App() {
-  return <h1>Hello from React component!</h1>;
+  const [count, setCount] = React.useState(0);
+  const clickMe = () => {
+    setCount(count + 1);
+  };
+  return <button onClick={clickMe}>Click me! ({count})</button>;
 }
 
 const root = ReactDom.createRoot(app);
