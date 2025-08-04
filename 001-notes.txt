@@ -1,0 +1,11 @@
+1. /node-modules/.bin/babel ./index.jsx --presets @babel/preset-react -o ./index.js
+2. browserify ./index.js -o ./bundle.js
+3. Browsers are retarded, so Firefox requres to CTRL+F5 to reload the page, since it caches the bundle.js file.
+
+--> Dependencies:
+  --> @babel/cli
+  --> @babel/preset-react
+  --> browserify
+  --> http-server
+  --> react
+  --> react-dom
